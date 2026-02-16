@@ -43,7 +43,7 @@ for row in db:
 #encode the original categorical training classes into numbers and add to the vector Y.
 #--> addd your Python code here
 
-class_map = {"No": 0, "Yes": 1}
+class_map = {"Yes": 0, "No": 1}
 # Y =
 for row in db:
     Y.append(class_map[row[4]])
@@ -58,4 +58,5 @@ clf = clf.fit(X, Y)
 
 #plotting decision tree
 tree.plot_tree(clf, feature_names=['Age', 'Spectacle', 'Astigmatism', 'Tear'], class_names=['Yes','No'], filled=True, rounded=True)
+
 plt.show()
