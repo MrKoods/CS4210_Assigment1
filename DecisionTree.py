@@ -1,9 +1,9 @@
 #-------------------------------------------------------------------------
-# AUTHOR: your name
+# AUTHOR: Nick Cuda
 # FILENAME: DecisionTree.py
-# SPECIFICATION: description of the program
+# SPECIFICATION: reads the contact_lens.csv dataset, encodes the categorical attributes into numerical values, and trains a depth-2 tree
 # FOR: CS 4210- Assignment #1
-# TIME SPENT: how long it took you to complete the assignment
+# TIME SPENT: Time spent on 7b is and and hour and 1/2
 #-----------------------------------------------------------*/
 
 #IMPORTANT NOTE: DO NOT USE ANY ADVANCED PYTHON LIBRARY TO COMPLETE THIS CODE SUCH AS numpy OR pandas. You have to work here only with standard
@@ -60,3 +60,4 @@ clf = clf.fit(X, Y)
 tree.plot_tree(clf, feature_names=['Age', 'Spectacle', 'Astigmatism', 'Tear'], class_names=['Yes','No'], filled=True, rounded=True)
 
 plt.show()
+
